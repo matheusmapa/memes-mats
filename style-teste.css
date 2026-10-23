@@ -1,0 +1,563 @@
+/* ==========================================================================
+   RESET & CORE
+   ========================================================================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-dark: #0a0c14;
+  --bg-card: #131722;
+  --bg-card-border: rgba(255, 255, 255, 0.08);
+  --primary: #f43f5e;
+  --primary-gradient: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --radius-lg: 16px;
+  --radius-md: 12px;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  line-height: 1.5;
+  overflow-x: hidden;
+  padding-bottom: 80px; /* Space for sticky bar on mobile */
+  background-image: radial-gradient(circle at 50% 0%, rgba(220, 39, 67, 0.12), transparent 45%);
+}
+
+.container {
+  width: 100%;
+  max-width: 560px; /* Clean mobile-first column matching reference */
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.text-center { text-align: center; }
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.rounded-img {
+  border-radius: var(--radius-md);
+  border: 1px solid var(--bg-card-border);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* ==========================================================================
+   TOP BAR / HANDLE PILL
+   ========================================================================== */
+.page-top {
+  padding: 16px 0 10px;
+}
+
+.user-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg-card);
+  border: 1px solid var(--bg-card-border);
+  padding: 6px 14px 6px 8px;
+  border-radius: 100px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.5px solid #e6683c;
+}
+
+.user-handle {
+  font-weight: 800;
+  font-size: 0.95rem;
+  letter-spacing: -0.2px;
+}
+
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+.section-hero {
+  padding: 15px 0 25px;
+}
+
+.main-headline {
+  font-size: 1.85rem;
+  font-weight: 900;
+  line-height: 1.22;
+  letter-spacing: -0.5px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.guide-banner-card {
+  margin-bottom: 24px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(230, 104, 60, 0.25);
+  border: 1px solid rgba(240, 148, 51, 0.3);
+}
+
+.guide-img {
+  width: 100%;
+  max-height: 480px;
+  object-fit: cover;
+}
+
+.sub-headline {
+  font-size: 1.2rem;
+  font-weight: 800;
+  line-height: 1.35;
+  color: #f1f5f9;
+  margin-bottom: 16px;
+}
+
+.proof-card {
+  margin-bottom: 24px;
+}
+
+/* ==========================================================================
+   PITCH BOX (12 MINUTOS)
+   ========================================================================== */
+.section-pitch {
+  padding: 15px 0 25px;
+}
+
+.pitch-box {
+  background: linear-gradient(180deg, #161a29 0%, #101320 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg);
+  padding: 24px 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.pitch-title {
+  font-size: 1.55rem;
+  font-weight: 900;
+  margin-bottom: 14px;
+  color: #ff4d6d;
+}
+
+.pitch-p {
+  font-size: 1.02rem;
+  color: #cbd5e1;
+  margin-bottom: 14px;
+  line-height: 1.55;
+}
+
+.pitch-p strong {
+  color: #ffffff;
+}
+
+.pitch-highlight {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #fbbf24;
+  background: rgba(251, 191, 36, 0.12);
+  border: 1px dashed rgba(251, 191, 36, 0.35);
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  margin-top: 10px;
+}
+
+/* ==========================================================================
+   PRINTS & PROOFS SECTIONS
+   ========================================================================== */
+.section-prints {
+  padding: 25px 0;
+}
+
+.section-heading {
+  font-size: 1.25rem;
+  font-weight: 900;
+  letter-spacing: -0.3px;
+  margin-bottom: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.badge-guarantee {
+  display: inline-block;
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  color: #10b981;
+  font-weight: 800;
+  font-size: 0.88rem;
+  padding: 6px 16px;
+  border-radius: 100px;
+  margin-bottom: 12px;
+}
+
+/* Grids for Screenshots */
+.prints-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.tall-prints {
+  grid-template-columns: 1fr 1fr;
+}
+
+.chat-prints {
+  grid-template-columns: 1fr 1fr;
+}
+
+.print-item {
+  transition: transform 0.2s ease;
+}
+
+.print-item:hover {
+  transform: scale(1.02);
+}
+
+/* ==========================================================================
+   CTA SECTION
+   ========================================================================== */
+.section-cta {
+  padding: 30px 0 20px;
+}
+
+.cta-heading {
+  font-size: 1.35rem;
+  font-weight: 900;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.action-btn {
+  width: 100%;
+  max-width: 440px;
+  background: var(--primary-gradient);
+  border: none;
+  color: #ffffff;
+  padding: 20px 24px;
+  font-size: 1.15rem;
+  font-weight: 900;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(220, 39, 67, 0.55);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.action-btn:hover {
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 15px 40px rgba(220, 39, 67, 0.75);
+}
+
+.pulse-anim {
+  animation: pulse-cta 2.2s infinite;
+}
+
+@keyframes pulse-cta {
+  0%, 100% { box-shadow: 0 10px 28px rgba(220, 39, 67, 0.5); }
+  50% { box-shadow: 0 15px 42px rgba(220, 39, 67, 0.85); transform: scale(1.015); }
+}
+
+.trust-list {
+  margin: 16px 0 22px;
+}
+
+.trust-line {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #cbd5e1;
+  margin: 4px 0;
+}
+
+.community-box {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-md);
+  padding: 18px 16px;
+  margin-top: 15px;
+}
+
+.comm-title {
+  font-size: 0.95rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.comm-badge {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: #38bdf8;
+  margin-bottom: 8px;
+}
+
+.comm-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.page-footer {
+  padding: 25px 0 35px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footer-handle {
+  font-weight: 800;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.footer-copy {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.footer-sub {
+  font-size: 0.72rem;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  margin-top: 8px;
+}
+
+/* ==========================================================================
+   STICKY BAR FOR MOBILE
+   ========================================================================== */
+.sticky-footer-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(10, 12, 20, 0.95);
+  backdrop-filter: blur(14px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 12px 16px;
+  z-index: 100;
+}
+
+.sticky-btn {
+  width: 100%;
+  background: var(--primary-gradient);
+  border: none;
+  color: #ffffff;
+  padding: 15px;
+  font-size: 1rem;
+  font-weight: 900;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(220, 39, 67, 0.4);
+}
+
+/* ==========================================================================
+   SECRET REVEAL MODAL
+   ========================================================================== */
+.secret-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(16px);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.secret-modal-backdrop.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.secret-modal-content {
+  width: 100%;
+  max-width: 480px;
+  background: linear-gradient(180deg, #181c2b 0%, #0e101a 100%);
+  border: 1px solid rgba(220, 39, 67, 0.4);
+  border-radius: 20px;
+  padding: 28px 20px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7), 0 0 50px rgba(220, 39, 67, 0.25);
+  transform: scale(0.92);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.secret-modal-backdrop.open .secret-modal-content {
+  transform: scale(1);
+}
+
+.close-modal-btn {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.modal-secret-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(244, 63, 94, 0.15);
+  border: 1px solid rgba(244, 63, 94, 0.35);
+  color: #fb7185;
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 4px 12px;
+  border-radius: 100px;
+  margin-bottom: 12px;
+}
+
+.pulsing-circle {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #f43f5e;
+  animation: pulse-dot 1.5s infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.85); }
+}
+
+.modal-icon-lock {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.modal-h2 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 1.25;
+  margin-bottom: 14px;
+}
+
+.highlight-text {
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.modal-body-text {
+  font-size: 0.92rem;
+  color: #cbd5e1;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: left;
+  background: rgba(0, 0, 0, 0.25);
+  padding: 12px 14px;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.steps-box {
+  text-align: left;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  margin-bottom: 20px;
+}
+
+.step-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.step-row:last-child {
+  margin-bottom: 0;
+}
+
+.step-num {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--primary-gradient);
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.step-txt strong {
+  font-size: 0.88rem;
+  color: #ffffff;
+  display: block;
+}
+
+.step-txt p {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.instagram-follow-btn {
+  width: 100%;
+  background: var(--primary-gradient);
+  border: none;
+  color: #ffffff;
+  padding: 16px;
+  font-size: 0.98rem;
+  font-weight: 900;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(220, 39, 67, 0.5);
+  transition: transform 0.2s ease;
+}
+
+.instagram-follow-btn:hover {
+  transform: translateY(-2px);
+}
+
+.modal-footer-hint {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin-top: 12px;
+}
+
+/* ==========================================================================
+   DESKTOP TWEAKS
+   ========================================================================== */
+@media (min-width: 600px) {
+  .main-headline {
+    font-size: 2.2rem;
+  }
+  .sub-headline {
+    font-size: 1.35rem;
+  }
+  .sticky-footer-bar {
+    display: none;
+  }
+}
