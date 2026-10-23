@@ -1,0 +1,13 @@
+{
+  "name": "viral-landing-page",
+  "version": "1.0.0",
+  "description": "Landing page de alta conversão para crescimento viral no Instagram",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "deploy": "vercel --prod"
+  },
+  "keywords": ["landing-page", "instagram", "viral", "reels"],
+  "author": "",
+  "license": "MIT"
+}

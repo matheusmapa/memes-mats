@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>A Nova Era dos Virais | Engenharia Reversa do Algoritmo</title>
+  
+  <!-- SEO & Social Sharing -->
+  <meta name="description" content="Aprenda a metodologia exata de engenharia reversa para explodir suas visualizações e seguidores no Instagram em tempo recorde.">
+  <meta property="og:title" content="A Onda Está Acontecendo Agora. Vai Surfar ou Só Assistir?">
+  <meta property="og:description" content="Descubra o truque de retenção e engenharia reversa que fez páginas saírem do zero para mais de 10 milhões de views.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#090a0f">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Canvas Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Bar: Live Social Proof -->
+  <div class="top-announcement">
+    <div class="container announcement-content">
+      <span class="live-dot"></span>
+      <span class="announcement-text">
+        <strong>AO VIVO:</strong> <span id="live-visitors">194</span> pessoas nesta página • Acesso exclusivo para a nova onda de criadores
+      </span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container header-container">
+      <div class="profile-badge">
+        <div class="avatar-ring">
+          <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=100&auto=format&fit=crop&q=80" alt="Avatar" class="profile-avatar" id="header-avatar">
+        </div>
+        <div class="profile-info">
+          <div class="handle-row">
+            <span class="profile-handle" id="header-handle">@memes.mats</span>
+            <span class="verified-icon" title="Verificado">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M10.007 2.104a2.25 2.25 0 0 1 3.986 0l.966 1.834a2.25 2.25 0 0 0 1.636 1.188l2.046.332a2.25 2.25 0 0 1 2.464 2.464l-.332 2.046a2.25 2.25 0 0 0 1.188 1.636l1.834.966a2.25 2.25 0 0 1 0 3.986l-1.834.966a2.25 2.25 0 0 0-1.188 1.636l.332 2.046a2.25 2.25 0 0 1-2.464 2.464l-2.046-.332a2.25 2.25 0 0 0-1.636 1.188l-.966 1.834a2.25 2.25 0 0 1-3.986 0l-.966-1.834a2.25 2.25 0 0 0-1.636-1.188l-2.046-.332a2.25 2.25 0 0 1-2.464-2.464l.332-2.046a2.25 2.25 0 0 0-1.188-1.636l-1.834-.966a2.25 2.25 0 0 1 0-3.986l1.834-.966a2.25 2.25 0 0 0 1.188-1.636l-.332-2.046a2.25 2.25 0 0 1 2.464-2.464l2.046.332a2.25 2.25 0 0 0 1.636-1.188l.966-1.834ZM9.47 11.22a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l5.5-5.5a.75.75 0 1 0-1.06-1.06L11.97 13.69l-2.5-2.47Z"/></svg>
+            </span>
+          </div>
+          <span class="profile-sub">Engenharia Reversa & Viralidade</span>
+        </div>
+      </div>
+      <div class="header-status">
+        <span class="badge-status">🔥 ALGORITMO 2026 DESTRAVADO</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="hero-section">
+    <div class="container hero-container">
+      
+      <div class="hero-badge">
+        <span class="wave-icon">🌊🏄‍♂️</span>
+        <span>A ONDA ESTÁ ACONTECENDO AGORA</span>
+      </div>
+
+      <h1 class="hero-title">
+        VOCÊ VAI <span class="text-gradient">SURFAR</span> OU SÓ FICAR <span class="text-white">ASSISTINDO</span> DE FORA? 👀
+      </h1>
+
+      <p class="hero-subtitle">
+        Quer saber exatamente como eu saí do <strong>absoluto zero</strong> para mais de 
+        <span class="highlight-metric">14 MILHÕES de visualizações</span> e dezenas de milhares de seguidores em poucos dias, 
+        sem gastar 1 centavo com anúncios e sem enrolação teórica?
+      </p>
+
+      <!-- Main Action Button (Triggers the Secret Reveal Modal) -->
+      <div class="cta-wrapper">
+        <button class="cta-btn pulse-glow trigger-secret" id="hero-cta">
+          <span class="btn-text">QUERO SABER O MÉTODO AGORA</span>
+          <span class="btn-icon">🚀</span>
+        </button>
+        <div class="cta-subtext">
+          <span class="lock-icon">🔒</span>
+          <span>Acesso confidencial • Poucas vagas para a primeira turma</span>
+        </div>
+      </div>
+
+      <!-- Real Instagram Insights Card (Interactive Showcase) -->
+      <div class="insights-mockup-card">
+        <div class="mockup-header">
+          <div class="mockup-tab-title">
+            <span class="insta-glyph">📸</span>
+            <span>Painel Profissional do Instagram</span>
+          </div>
+          <div class="mockup-period-tabs">
+            <button class="period-tab active" data-period="28d">28 dias</button>
+            <button class="period-tab" data-period="14d">14 dias</button>
+            <button class="period-tab" data-period="7d">7 dias</button>
+          </div>
+        </div>
+
+        <div class="mockup-stats-grid">
+          <div class="stat-box primary-stat">
+            <span class="stat-label">Contas com alcance</span>
+            <div class="stat-number-row">
+              <span class="stat-value" id="val-reach">14.842.190</span>
+              <span class="stat-growth">+3.840%</span>
+            </div>
+            <div class="stat-sub">vs. período anterior (100% orgânico)</div>
+          </div>
+
+          <div class="stat-box">
+            <span class="stat-label">Visualizações de Reels</span>
+            <div class="stat-number-row">
+              <span class="stat-value" id="val-views">31.290.450</span>
+              <span class="stat-growth">+4.120%</span>
+            </div>
+            <div class="stat-sub">Mais de 1 milhão/dia</div>
+          </div>
+
+          <div class="stat-box">
+            <span class="stat-label">Novos Seguidores</span>
+            <div class="stat-number-row">
+              <span class="stat-value" id="val-followers">+78.430</span>
+              <span class="stat-growth">+1.980%</span>
+            </div>
+            <div class="stat-sub">Público altamente qualificado</div>
+          </div>
+        </div>
+
+        <!-- Simulated Viral Growth Chart -->
+        <div class="growth-chart-container">
+          <div class="chart-header">
+            <span>Curva de Entrega do Algoritmo</span>
+            <span class="viral-tag">EXPLOSÃO ORGÂNICA 🚀</span>
+          </div>
+          <svg class="chart-svg" viewBox="0 0 500 140" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="chartGradient" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#ec4899" stop-opacity="0.5"/>
+                <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.0"/>
+              </linearGradient>
+            </defs>
+            <path d="M0,130 Q80,128 140,120 T240,95 T340,60 T420,20 L500,5 L500,140 L0,140 Z" fill="url(#chartGradient)"/>
+            <path d="M0,130 Q80,128 140,120 T240,95 T340,60 T420,20 L500,5" fill="none" stroke="#f43f5e" stroke-width="3.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+
+        <div class="mockup-footer-note">
+          <span class="badge-verified-mini">✓ Dados reais de conta aplicando a metodologia</span>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- The 12-Minute Trick Section -->
+  <section class="section-method">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="pill-tag">🔥 O MELHOR DE TUDO?</span>
+        <h2 class="section-title">Nada de horas de teoria chata!</h2>
+        <p class="section-desc">
+          Em apenas <strong>12 minutos de vídeo direto ao ponto</strong>, você aprende exatamente a aplicar a técnica que faz o algoritmo distribuir seus vídeos sem parar.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon-wrapper purple">
+            <span>⏱️</span>
+          </div>
+          <h3 class="feature-title">O Truque dos 12 Minutos</h3>
+          <p class="feature-text">
+            Um único vídeo prático, gravado na tela, sem enrolação. Você assiste agora e aplica em menos de 15 minutos na sua própria página.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper pink">
+            <span>🧲</span>
+          </div>
+          <h3 class="feature-title">Retenção Magnética</h3>
+          <p class="feature-text">
+            A brecha oculta que faz as pessoas assistirem seu vídeo até o final e darem loop 2 ou 3 vezes sem perceber, forçando o Instagram a viralizar.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper green">
+            <span>👥</span>
+          </div>
+          <h3 class="feature-title">Comunidade no WhatsApp</h3>
+          <p class="feature-text">
+            Acesso ao grupo exclusivo com criadores que fazem 50k, 100k e até 1 MILHÃO de views todos os dias. Networking e acompanhamento direto!
+          </p>
+        </div>
+      </div>
+
+      <!-- Comparison: Old Way vs New Wave -->
+      <div class="comparison-card">
+        <h3 class="comparison-title text-center">O Jeito Tradicional vs. A Nova Onda</h3>
+        <div class="comparison-columns">
+          <div class="comp-col old-way">
+            <div class="comp-header">
+              <span class="comp-icon">❌</span>
+              <h4>O Jeito Antigo</h4>
+            </div>
+            <ul>
+              <li>Passar 4 horas editando um vídeo complexo</li>
+              <li>Ficar preso em 200 a 500 visualizações</li>
+              <li>Queimar dinheiro com anúncios e impulsão</li>
+              <li>Perder tempo com hashtags e horários mágicos</li>
+              <li>Frustração constante e perfil estagnado</li>
+            </ul>
+          </div>
+          <div class="comp-col new-way">
+            <div class="comp-header">
+              <span class="comp-icon">⚡</span>
+              <h4>A Metodologia Viral</h4>
+            </div>
+            <ul>
+              <li><strong>12 minutos</strong> para produzir e publicar</li>
+              <li><strong>50k a 1M+ views</strong> organicamente por post</li>
+              <li><strong>Zero reais</strong> gastos em anúncios</li>
+              <li>O algoritmo trabalha a seu favor no piloto automático</li>
+              <li>Monetização, parcerias e autoridade instantânea</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Proof & Community Testimonials Section -->
+  <section class="section-proof">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="pill-tag">💬 VEJA O QUE ESTÃO FALANDO</span>
+        <h2 class="section-title">Resultados de Quem Já Está Aplicando</h2>
+        <p class="section-desc">Pessoas comuns alcançando números impressionantes logo nos primeiros dias.</p>
+      </div>
+
+      <div class="whatsapp-chat-grid">
+        
+        <!-- Chat Bubble 1 -->
+        <div class="chat-card">
+          <div class="chat-header">
+            <div class="chat-user-avatar">M</div>
+            <div class="chat-user-meta">
+              <span class="chat-name">Matheus • Aluno Turma 1</span>
+              <span class="chat-time">Hoje às 14:22</span>
+            </div>
+          </div>
+          <div class="chat-body">
+            <div class="chat-bubble user-bubble">
+              <p>Mano do céu... olha o reel que postei ontem usando o gancho dos 3 segundos da aula 🤯</p>
+              <div class="chat-print-mockup">
+                <div class="print-inner">
+                  <span class="print-stat">🔥 842.190 visualizações</span>
+                  <span class="print-sub">+1.400 seguidores novos em 14 horas</span>
+                </div>
+              </div>
+            </div>
+            <div class="chat-bubble user-bubble reply">
+              <p>Nem acredito, primeira vez na vida que vejo minha barra de notificações travar assim kkkk</p>
+            </div>
+          </div>
+          <div class="chat-reactions">
+            <span>🔥 14</span>
+            <span>🚀 9</span>
+            <span>👏 6</span>
+          </div>
+        </div>
+
+        <!-- Chat Bubble 2 -->
+        <div class="chat-card">
+          <div class="chat-header">
+            <div class="chat-user-avatar purple">L</div>
+            <div class="chat-user-meta">
+              <span class="chat-name">Lucas Boss • Membro VIP</span>
+              <span class="chat-time">Ontem às 21:05</span>
+            </div>
+          </div>
+          <div class="chat-body">
+            <div class="chat-bubble user-bubble">
+              <p>Irmão, gravei o vídeo há 6 dias e tava com 2k de seguidores. <strong>Hoje bati 62k</strong> hahaha surreal!</p>
+              <div class="audio-note-mockup">
+                <button class="audio-play-btn">▶</button>
+                <div class="audio-wave">
+                  <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+                <span class="audio-time">0:38</span>
+              </div>
+            </div>
+            <div class="chat-bubble user-bubble reply">
+              <p>A comunidade no WhatsApp vale mais que qualquer faculdade de marketing!</p>
+            </div>
+          </div>
+          <div class="chat-reactions">
+            <span>🤯 21</span>
+            <span>❤️ 15</span>
+          </div>
+        </div>
+
+        <!-- Chat Bubble 3 -->
+        <div class="chat-card">
+          <div class="chat-header">
+            <div class="chat-user-avatar green">R</div>
+            <div class="chat-user-meta">
+              <span class="chat-name">Rafa • Página de Humor</span>
+              <span class="chat-time">Quinta-feira</span>
+            </div>
+          </div>
+          <div class="chat-body">
+            <div class="chat-bubble user-bubble">
+              <p>Só passando pra agradecer de coração. 23 dias de conta e passei de 3 MILHÕES de contas alcançadas. O truque do loop funciona mesmo!</p>
+            </div>
+          </div>
+          <div class="chat-reactions">
+            <span>🎯 18</span>
+            <span>🚀 12</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Trust Badges -->
+      <div class="trust-row">
+        <div class="trust-item">
+          <span class="trust-icon">⭐</span>
+          <span><strong>7 Dias</strong> de Garantia Incondicional</span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon">🔒</span>
+          <span>Acesso <strong>100% Seguro</strong></span>
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon">📱</span>
+          <span>Acesso Imediato pelo Celular ou PC</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Final CTA Bar -->
+  <section class="section-final-cta">
+    <div class="container text-center">
+      <div class="final-box">
+        <h2 class="final-title">Não Perca Mais Tempo. A Onda é Agora! 🌊</h2>
+        <p class="final-desc">
+          Enquanto você hesita, outras páginas estão aproveitando essa brecha e acumulando os seguidores que poderiam ser seus.
+        </p>
+
+        <button class="cta-btn big pulse-glow trigger-secret" id="final-cta">
+          <span class="btn-text">QUERO SABER O MÉTODO AGORA</span>
+          <span class="btn-icon">🚀</span>
+        </button>
+
+        <div class="countdown-badge">
+          <span>⌛ VAGAS DA PRIMEIRA TURMA EXTREMAMENTE LIMITADAS</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-content text-center">
+      <p class="footer-handle" id="footer-handle">@memes.mats</p>
+      <p class="footer-copy">© 2026 Todos os direitos reservados. Engenharia reversa de virais e retenção de audiência no Instagram.</p>
+    </div>
+  </footer>
+
+  <!-- Floating Mobile Sticky CTA -->
+  <div class="mobile-sticky-bar" id="mobile-sticky-bar">
+    <button class="sticky-cta-btn trigger-secret">
+      <span>QUERO O MÉTODO AGORA 🚀</span>
+    </button>
+  </div>
+
+  <!-- Social Toast Notification -->
+  <div class="social-toast" id="social-toast">
+    <div class="toast-avatar">🔥</div>
+    <div class="toast-body">
+      <span class="toast-title" id="toast-user">Gabriel M.</span>
+      <span class="toast-text">acabou de garantir a vaga antecipada</span>
+    </div>
+  </div>
+
+
+  <!-- ======================================================== -->
+  <!-- THE SECRET REVEAL MODAL (Triggered only when clicking CTA) -->
+  <!-- ======================================================== -->
+  <div class="modal-backdrop" id="secret-modal">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modal-close" aria-label="Fechar">✕</button>
+
+      <div class="modal-badge-secret">
+        <span class="secret-pulse"></span>
+        <span>ACESSO CONFIDENCIAL ANTECIPADO</span>
+      </div>
+
+      <div class="modal-lock-icon">
+        <span class="lock-emoji">🤫</span>
+      </div>
+
+      <h2 class="modal-title">
+        O SEGREDO SERÁ REVELADO <span class="text-gradient">MUITO EM BREVE!</span>
+      </h2>
+
+      <p class="modal-description">
+        O vídeo de <strong>12 minutos</strong> com a engenharia reversa completa já está finalizado e pronto para ir ao ar.
+        <br><br>
+        Porém, para <strong>evitar que o algoritmo sature</strong> e garantir o suporte individual no nosso grupo VIP de alunos, as vagas serão abertas com prioridade e desconto exclusivo <strong>PRIMEIRO para quem estiver nos acompanhando de perto</strong>.
+      </p>
+
+      <div class="action-steps-card">
+        <h4 class="steps-heading">⚠️ COMO GARANTIR SUA VAGA ANTES DE TODO MUNDO:</h4>
+        
+        <div class="step-item">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <strong>Siga o perfil agora mesmo no Instagram</strong>
+            <p>Ative as notificações do perfil e fique 100% ligado nos <strong>Stories</strong> diários, pois o link secreto será liberado por lá sem aviso prévio!</p>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <strong>Envie a palavra "VIRAL" na DM (Direct)</strong>
+            <p>Assim que você mandar no privado, seu nome entra na <strong>Lista VIP Prioritária</strong> para receber o link antes do público geral.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Action Button: Opens the User's Instagram Profile -->
+      <a href="#" class="instagram-redirect-btn" id="instagram-cta-btn" target="_blank" rel="noopener noreferrer">
+        <span class="insta-icon">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </span>
+        <span class="btn-main-text">SEGUIR O PERFIL NO INSTAGRAM AGORA</span>
+        <span class="btn-arrow">➔</span>
+      </a>
+
+      <div class="modal-footer-note">
+        <span>⚡ Fique ligado nos Stories e ative o sininho para não perder nada!</span>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
